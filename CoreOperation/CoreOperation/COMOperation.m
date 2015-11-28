@@ -10,8 +10,6 @@
 
 @interface COMOperation ()
 
-@property (nonatomic, strong, readwrite) NSProgress *progress;
-
 @property (atomic, assign, getter=isReady) BOOL ready;
 @property (atomic, assign, getter=isExecuting) BOOL executing;
 @property (atomic, assign, getter=isFinished) BOOL finished;
@@ -19,9 +17,6 @@
 @property (nonatomic, strong, readwrite) id result;
 @property (nonatomic, strong, readwrite) NSError *error;
 
-/**
- Internal callback queue to make sure callbacks execute on same queue operation is created on.
- */
 @property (nonatomic, strong) NSOperationQueue *callbackQueue;
 
 @end
@@ -41,21 +36,7 @@
     if (self)
     {
         self.ready = YES;
-        self.progress = [NSProgress progressWithTotalUnitCount:-1];
         self.callbackQueue = [NSOperationQueue currentQueue];
-    }
-    
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
-{
-    self = [self init];
-    
-    if (self)
-    {
-        self.identifier = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(identifier))];
-        self.operationQueueIdentifier = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(operationQueueIdentifier))];
     }
     
     return self;
@@ -63,17 +44,12 @@
 
 #pragma mark - Name
 
-//We will return the identifier as the name so that it is easier to debug.
 - (NSString *)name
 {
     return self.identifier;
 }
 
 #pragma mark - State
-
-/***************************************************************************************************
- We need to implement the getters and setters manually as the compiler hates the readonly attribute.
- ***************************************************************************************************/
 
 - (void)setReady:(BOOL)ready
 {
@@ -135,7 +111,7 @@
         self.executing = YES;
         self.finished = NO;
         
-        NSLog(@"\"%@\" Operation Started.", self.name);
+        NSLog(@"%@ - Operation will start.", self.name);
     }
 }
 
@@ -143,7 +119,7 @@
 {
     if (self.executing)
     {
-        NSLog(@"\"%@\" Operation Finished.", self.name);
+        NSLog(@"%@ - Operation did finish.", self.name);
         
         self.executing = NO;
         self.finished = YES;
@@ -195,34 +171,6 @@
              self.onFailure(error);
          }];
     }
-}
-
-#pragma mark - NSCoding
-
-- (void)encodeWithCoder:(NSCoder *)aCoder
-{
-    [aCoder encodeObject:self.identifier
-                  forKey:NSStringFromSelector(@selector(identifier))];
-    
-    [aCoder encodeObject:self.operationQueueIdentifier
-                  forKey:NSStringFromSelector(@selector(operationQueueIdentifier))];
-}
-
-#pragma mark - NSCopying
-
-- (instancetype)copyWithZone:(NSZone *)zone
-{
-    COMOperation *newOperation = [[self.class allocWithZone:zone] init];
-    
-    newOperation.callbackQueue = _callbackQueue;
-    
-    newOperation.identifier = [_identifier copy];
-    newOperation.operationQueueIdentifier = [_operationQueueIdentifier copy];
-    
-    newOperation.onSuccess = [_onSuccess copy];
-    newOperation.onFailure = [_onFailure copy];
-    
-    return newOperation;
 }
 
 @end

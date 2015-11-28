@@ -8,23 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^COMOperationOnSuccessCallback)(id result);
-typedef void (^COMOperationOnFailureCallback)(NSError *error);
-typedef void (^COMOperationOnCompletionCallback)(id result);
+typedef void (^COMOperationOnSuccess)(id result);
+typedef void (^COMOperationOnFailure)(NSError *error);
+typedef void (^COMOperationOnCompletion)(id result);
 
-@interface COMOperation : NSOperation <NSCoding, NSCopying>
+@interface COMOperation : NSOperation
 
 @property (atomic, copy) NSString *identifier;
 @property (atomic, copy) NSString *operationQueueIdentifier;
 
-@property (nonatomic, copy) COMOperationOnSuccessCallback onSuccess;
-@property (nonatomic, copy) COMOperationOnFailureCallback onFailure;
-@property (nonatomic, copy) COMOperationOnCompletionCallback onCompletion;
+@property (nonatomic, copy) COMOperationOnSuccess onSuccess;
+@property (nonatomic, copy) COMOperationOnFailure onFailure;
+@property (nonatomic, copy) COMOperationOnCompletion onCompletion;
 
 @property (nonatomic, strong, readonly) id result;
 @property (nonatomic, strong, readonly) NSError *error;
-@property (nonatomic, strong, readonly) NSProgress *progress;
-
 
 /**
  Finishes the execution of the operation.

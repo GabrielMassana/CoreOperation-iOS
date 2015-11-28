@@ -29,6 +29,7 @@
 		7AAD3FEA1C09C17D009617BB /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
 		7AAD3FEB1C09C17D009617BB /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
 		7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
+		7AAD3FEF1C09C2C8009617BB /* CoreOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 				7AAD3FEA1C09C17D009617BB /* COMOperation.m */,
 				7AAD3FEB1C09C17D009617BB /* COMOperationQueueManager.h */,
 				7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */,
+				7AAD3FEF1C09C2C8009617BB /* CoreOperation.h */,
 			);
 			path = CoreOperation;
 			sourceTree = "<group>";

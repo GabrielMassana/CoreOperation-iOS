@@ -8,7 +8,7 @@
 
 #import "OQMOperationQueueManager.h"
 
-#import "OQMOperation.h"
+#import "COMOperation.h"
 
 @interface OQMOperationQueueManager ()
 
@@ -58,7 +58,7 @@
 
 #pragma mark - AddOperation
 
-- (void)addOperation:(OQMOperation *)operation
+- (void)addOperation:(COMOperation *)operation
 {
     NSOperationQueue *operationQueue = self.operationQueuesDictionary[operation.operationQueueIdentifier];
     

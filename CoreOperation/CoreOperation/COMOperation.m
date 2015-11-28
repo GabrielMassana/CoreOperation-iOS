@@ -6,9 +6,9 @@
 //  Copyright © 2015 Gabriel Massana. All rights reserved.
 //
 
-#import "OQMOperation.h"
+#import "COMOperation.h"
 
-@interface OQMOperation ()
+@interface COMOperation ()
 
 @property (nonatomic, strong, readwrite) NSProgress *progress;
 
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation OQMOperation
+@implementation COMOperation
 
 @synthesize ready = _ready;
 @synthesize executing = _executing;
@@ -212,7 +212,7 @@
 
 - (instancetype)copyWithZone:(NSZone *)zone
 {
-    OQMOperation *newOperation = [[self.class allocWithZone:zone] init];
+    COMOperation *newOperation = [[self.class allocWithZone:zone] init];
     
     newOperation.callbackQueue = _callbackQueue;
     

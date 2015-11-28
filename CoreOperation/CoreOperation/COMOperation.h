@@ -12,7 +12,7 @@ typedef void (^OQMOperationOnSuccessCallback)(id result);
 typedef void (^OQMOperationOnFailureCallback)(NSError *error);
 typedef void (^OQMOperationOnCompletionCallback)(id result);
 
-@interface OQMOperation : NSOperation <NSCoding, NSCopying>
+@interface COMOperation : NSOperation <NSCoding, NSCopying>
 
 @property (atomic, copy) NSString *identifier;
 @property (atomic, copy) NSString *operationQueueIdentifier;

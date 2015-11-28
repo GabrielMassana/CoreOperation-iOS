@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class OQMOperation;
+@class COMOperation;
 
 /**
  Identifier for the scheduler for generic network data operations.
@@ -27,7 +27,7 @@ static NSString *const kHOTNetworkDataOperationQueueTypeIdentifier = @"kHOTNetwo
 - (void)registerOperationQueue:(NSOperationQueue *)operationQueue
       operationQueueIdentifier:(NSString *)operationQueueIdentifier;
 
-- (void)addOperation:(OQMOperation *)operation;
+- (void)addOperation:(COMOperation *)operation;
 
 
 @end

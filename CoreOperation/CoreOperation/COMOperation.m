@@ -1,5 +1,5 @@
 //
-//  OQMOperation.m
+//  COMOperation.m
 //  Hot
 //
 //  Created by GabrielMassana on 18/11/2015.

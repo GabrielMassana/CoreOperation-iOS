@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7AAD3FED1C09C17D009617BB /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD3FEA1C09C17D009617BB /* COMOperation.m */; };
-		7AAD3FEE1C09C17D009617BB /* OQMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD3FEC1C09C17D009617BB /* OQMOperationQueueManager.m */; };
+		7AAD3FEE1C09C17D009617BB /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +27,8 @@
 		7AAD3FDD1C09C141009617BB /* libCoreOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAD3FE91C09C17D009617BB /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
 		7AAD3FEA1C09C17D009617BB /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
-		7AAD3FEB1C09C17D009617BB /* OQMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OQMOperationQueueManager.h; sourceTree = "<group>"; };
-		7AAD3FEC1C09C17D009617BB /* OQMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OQMOperationQueueManager.m; sourceTree = "<group>"; };
+		7AAD3FEB1C09C17D009617BB /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
+		7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +63,8 @@
 			children = (
 				7AAD3FE91C09C17D009617BB /* COMOperation.h */,
 				7AAD3FEA1C09C17D009617BB /* COMOperation.m */,
-				7AAD3FEB1C09C17D009617BB /* OQMOperationQueueManager.h */,
-				7AAD3FEC1C09C17D009617BB /* OQMOperationQueueManager.m */,
+				7AAD3FEB1C09C17D009617BB /* COMOperationQueueManager.h */,
+				7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */,
 			);
 			path = CoreOperation;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AAD3FED1C09C17D009617BB /* COMOperation.m in Sources */,
-				7AAD3FEE1C09C17D009617BB /* OQMOperationQueueManager.m in Sources */,
+				7AAD3FEE1C09C17D009617BB /* COMOperationQueueManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

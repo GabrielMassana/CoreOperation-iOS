@@ -1,5 +1,5 @@
 //
-//  OQMOperationQueueManager.h
+//  COMOperationQueueManager.h
 //  Hot
 //
 //  Created by GabrielMassana on 18/11/2015.
@@ -15,12 +15,12 @@
  */
 static NSString *const kHOTNetworkDataOperationQueueTypeIdentifier = @"kHOTNetworkDataOperationQueueTypeIdentifier";
 
-@interface OQMOperationQueueManager : NSObject
+@interface COMOperationQueueManager : NSObject
 
 /*
- Returns the global OQMOperationQueueManager instance.
+ Returns the global COMOperationQueueManager instance.
  
- @return OQMOperationQueueManager instance.
+ @return COMOperationQueueManager instance.
  */
 + (instancetype)sharedInstance;
 

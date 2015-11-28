@@ -1,5 +1,5 @@
 //
-//  OQMOperation.h
+//  COMOperation.h
 //  Hot
 //
 //  Created by GabrielMassana on 18/11/2015.
@@ -8,18 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^OQMOperationOnSuccessCallback)(id result);
-typedef void (^OQMOperationOnFailureCallback)(NSError *error);
-typedef void (^OQMOperationOnCompletionCallback)(id result);
+typedef void (^COMOperationOnSuccessCallback)(id result);
+typedef void (^COMOperationOnFailureCallback)(NSError *error);
+typedef void (^COMOperationOnCompletionCallback)(id result);
 
 @interface COMOperation : NSOperation <NSCoding, NSCopying>
 
 @property (atomic, copy) NSString *identifier;
 @property (atomic, copy) NSString *operationQueueIdentifier;
 
-@property (nonatomic, copy) OQMOperationOnSuccessCallback onSuccess;
-@property (nonatomic, copy) OQMOperationOnFailureCallback onFailure;
-@property (nonatomic, copy) OQMOperationOnCompletionCallback onCompletion;
+@property (nonatomic, copy) COMOperationOnSuccessCallback onSuccess;
+@property (nonatomic, copy) COMOperationOnFailureCallback onFailure;
+@property (nonatomic, copy) COMOperationOnCompletionCallback onCompletion;
 
 @property (nonatomic, strong, readonly) id result;
 @property (nonatomic, strong, readonly) NSError *error;

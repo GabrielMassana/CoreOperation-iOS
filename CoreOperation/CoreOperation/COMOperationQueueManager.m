@@ -1,33 +1,33 @@
 //
-//  OQMOperationQueueManager.m
+//  COMOperationQueueManager.m
 //  Hot
 //
 //  Created by GabrielMassana on 18/11/2015.
 //  Copyright © 2015 Gabriel Massana. All rights reserved.
 //
 
-#import "OQMOperationQueueManager.h"
+#import "COMOperationQueueManager.h"
 
 #import "COMOperation.h"
 
-@interface OQMOperationQueueManager ()
+@interface COMOperationQueueManager ()
 
 @property (nonatomic, strong) NSMutableDictionary *operationQueuesDictionary;
 
 @end
 
-@implementation OQMOperationQueueManager
+@implementation COMOperationQueueManager
 
 #pragma mark - SharedInstance
 
 + (instancetype)sharedInstance
 {
-    static OQMOperationQueueManager *sharedInstance = nil;
+    static COMOperationQueueManager *sharedInstance = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
                   {
-                      sharedInstance = [[OQMOperationQueueManager alloc] init];
+                      sharedInstance = [[COMOperationQueueManager alloc] init];
                   });
     
     return sharedInstance;

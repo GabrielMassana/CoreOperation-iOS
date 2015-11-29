@@ -10,11 +10,6 @@
 
 @class COMOperation;
 
-/**
- Identifier for the scheduler for generic network data operations.
- */
-static NSString *const kHOTNetworkDataOperationQueueTypeIdentifier = @"kHOTNetworkDataOperationQueueTypeIdentifier";
-
 @interface COMOperationQueueManager : NSObject
 
 /*

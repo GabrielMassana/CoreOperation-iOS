@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreOperation"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "A static library project that simplifies NSOperationQueue."
 
   s.homepage     = "https://github.com/GabrielMassana"
-  s.license      = { :type => 'BSD'}
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md'}
   s.author       = { "Gabriel Massana" => "gabrielmassana@gmail.com" }
 
   s.platform     = :ios, "8.0"

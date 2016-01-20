@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AAD3FED1C09C17D009617BB /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD3FEA1C09C17D009617BB /* COMOperation.m */; };
-		7AAD3FEE1C09C17D009617BB /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */; };
+		7A92386F1C50304D0072D8E3 /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92386B1C50304D0072D8E3 /* COMOperation.m */; };
+		7A9238701C50304D0072D8E3 /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92386E1C50304D0072D8E3 /* COMOperationQueueManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,12 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A9238681C50304D0072D8E3 /* CoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
+		7A92386A1C50304D0072D8E3 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
+		7A92386B1C50304D0072D8E3 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
+		7A92386D1C50304D0072D8E3 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
+		7A92386E1C50304D0072D8E3 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
 		7AAD3FDD1C09C141009617BB /* libCoreOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AAD3FE91C09C17D009617BB /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
-		7AAD3FEA1C09C17D009617BB /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
-		7AAD3FEB1C09C17D009617BB /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
-		7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
-		7AAD3FEF1C09C2C8009617BB /* CoreOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A9238671C50304D0072D8E3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7A9238681C50304D0072D8E3 /* CoreOperation.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		7A9238691C50304D0072D8E3 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				7A92386A1C50304D0072D8E3 /* COMOperation.h */,
+				7A92386B1C50304D0072D8E3 /* COMOperation.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		7A92386C1C50304D0072D8E3 /* QueueManager */ = {
+			isa = PBXGroup;
+			children = (
+				7A92386D1C50304D0072D8E3 /* COMOperationQueueManager.h */,
+				7A92386E1C50304D0072D8E3 /* COMOperationQueueManager.m */,
+			);
+			path = QueueManager;
+			sourceTree = "<group>";
+		};
 		7AAD3FD41C09C141009617BB = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +88,9 @@
 		7AAD3FDF1C09C141009617BB /* CoreOperation */ = {
 			isa = PBXGroup;
 			children = (
-				7AAD3FE91C09C17D009617BB /* COMOperation.h */,
-				7AAD3FEA1C09C17D009617BB /* COMOperation.m */,
-				7AAD3FEB1C09C17D009617BB /* COMOperationQueueManager.h */,
-				7AAD3FEC1C09C17D009617BB /* COMOperationQueueManager.m */,
-				7AAD3FEF1C09C2C8009617BB /* CoreOperation.h */,
+				7A9238671C50304D0072D8E3 /* Header */,
+				7A9238691C50304D0072D8E3 /* Operation */,
+				7A92386C1C50304D0072D8E3 /* QueueManager */,
 			);
 			path = CoreOperation;
 			sourceTree = "<group>";
@@ -127,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAD3FED1C09C17D009617BB /* COMOperation.m in Sources */,
-				7AAD3FEE1C09C17D009617BB /* COMOperationQueueManager.m in Sources */,
+				7A92386F1C50304D0072D8E3 /* COMOperation.m in Sources */,
+				7A9238701C50304D0072D8E3 /* COMOperationQueueManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +276,7 @@
 				7AAD3FE81C09C141009617BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

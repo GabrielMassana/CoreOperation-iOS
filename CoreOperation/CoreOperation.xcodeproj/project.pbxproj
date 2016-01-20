@@ -7,33 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A92386F1C50304D0072D8E3 /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92386B1C50304D0072D8E3 /* COMOperation.m */; };
-		7A9238701C50304D0072D8E3 /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92386E1C50304D0072D8E3 /* COMOperationQueueManager.m */; };
+		7A92387F1C5030EA0072D8E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92387E1C5030EA0072D8E3 /* main.m */; };
+		7A9238881C5030EA0072D8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9238861C5030EA0072D8E3 /* Main.storyboard */; };
+		7A92388A1C5030EA0072D8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9238891C5030EA0072D8E3 /* Assets.xcassets */; };
+		7A92388D1C5030EA0072D8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A92388B1C5030EA0072D8E3 /* LaunchScreen.storyboard */; };
+		7A92389D1C50311C0072D8E3 /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238991C50311C0072D8E3 /* COMOperation.m */; };
+		7A92389E1C50311C0072D8E3 /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92389C1C50311C0072D8E3 /* COMOperationQueueManager.m */; };
+		7A9238A91C5031D40072D8E3 /* COMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A41C5031D40072D8E3 /* COMAppDelegate.m */; };
+		7A9238AA1C5031D40072D8E3 /* COMExampleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */; };
+		7A9238AB1C5031D40072D8E3 /* COMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A81C5031D40072D8E3 /* COMViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		7AAD3FDB1C09C141009617BB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		7A9238681C50304D0072D8E3 /* CoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
-		7A92386A1C50304D0072D8E3 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
-		7A92386B1C50304D0072D8E3 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
-		7A92386D1C50304D0072D8E3 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
-		7A92386E1C50304D0072D8E3 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
-		7AAD3FDD1C09C141009617BB /* libCoreOperation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreOperation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A92387A1C5030EA0072D8E3 /* CoreOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A92387E1C5030EA0072D8E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A9238871C5030EA0072D8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A9238891C5030EA0072D8E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A92388C1C5030EA0072D8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A92388E1C5030EA0072D8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A9238961C50311C0072D8E3 /* CoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
+		7A9238981C50311C0072D8E3 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
+		7A9238991C50311C0072D8E3 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
+		7A92389B1C50311C0072D8E3 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
+		7A92389C1C50311C0072D8E3 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
+		7A9238A31C5031D40072D8E3 /* COMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMAppDelegate.h; sourceTree = "<group>"; };
+		7A9238A41C5031D40072D8E3 /* COMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMAppDelegate.m; sourceTree = "<group>"; };
+		7A9238A51C5031D40072D8E3 /* COMExampleOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMExampleOperation.h; sourceTree = "<group>"; };
+		7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMExampleOperation.m; sourceTree = "<group>"; };
+		7A9238A71C5031D40072D8E3 /* COMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMViewController.h; sourceTree = "<group>"; };
+		7A9238A81C5031D40072D8E3 /* COMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7AAD3FDA1C09C141009617BB /* Frameworks */ = {
+		7A9238771C5030EA0072D8E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,68 +49,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A9238671C50304D0072D8E3 /* Header */ = {
+		7A9238711C5030EA0072D8E3 = {
 			isa = PBXGroup;
 			children = (
-				7A9238681C50304D0072D8E3 /* CoreOperation.h */,
-			);
-			path = Header;
-			sourceTree = "<group>";
-		};
-		7A9238691C50304D0072D8E3 /* Operation */ = {
-			isa = PBXGroup;
-			children = (
-				7A92386A1C50304D0072D8E3 /* COMOperation.h */,
-				7A92386B1C50304D0072D8E3 /* COMOperation.m */,
-			);
-			path = Operation;
-			sourceTree = "<group>";
-		};
-		7A92386C1C50304D0072D8E3 /* QueueManager */ = {
-			isa = PBXGroup;
-			children = (
-				7A92386D1C50304D0072D8E3 /* COMOperationQueueManager.h */,
-				7A92386E1C50304D0072D8E3 /* COMOperationQueueManager.m */,
-			);
-			path = QueueManager;
-			sourceTree = "<group>";
-		};
-		7AAD3FD41C09C141009617BB = {
-			isa = PBXGroup;
-			children = (
-				7AAD3FDF1C09C141009617BB /* CoreOperation */,
-				7AAD3FDE1C09C141009617BB /* Products */,
+				7A92387C1C5030EA0072D8E3 /* CoreOperation */,
+				7A92387B1C5030EA0072D8E3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7AAD3FDE1C09C141009617BB /* Products */ = {
+		7A92387B1C5030EA0072D8E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7AAD3FDD1C09C141009617BB /* libCoreOperation.a */,
+				7A92387A1C5030EA0072D8E3 /* CoreOperation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7AAD3FDF1C09C141009617BB /* CoreOperation */ = {
+		7A92387C1C5030EA0072D8E3 /* CoreOperation */ = {
 			isa = PBXGroup;
 			children = (
-				7A9238671C50304D0072D8E3 /* Header */,
-				7A9238691C50304D0072D8E3 /* Operation */,
-				7A92386C1C50304D0072D8E3 /* QueueManager */,
+				7A9238941C50311C0072D8E3 /* CoreOperation */,
+				7A9238A21C5031D40072D8E3 /* Example */,
+				7A9238861C5030EA0072D8E3 /* Main.storyboard */,
+				7A9238891C5030EA0072D8E3 /* Assets.xcassets */,
+				7A92388B1C5030EA0072D8E3 /* LaunchScreen.storyboard */,
+				7A92388E1C5030EA0072D8E3 /* Info.plist */,
+				7A92387D1C5030EA0072D8E3 /* Supporting Files */,
 			);
 			path = CoreOperation;
+			sourceTree = "<group>";
+		};
+		7A92387D1C5030EA0072D8E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A92387E1C5030EA0072D8E3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A9238941C50311C0072D8E3 /* CoreOperation */ = {
+			isa = PBXGroup;
+			children = (
+				7A9238951C50311C0072D8E3 /* Header */,
+				7A9238971C50311C0072D8E3 /* Operation */,
+				7A92389A1C50311C0072D8E3 /* QueueManager */,
+			);
+			path = CoreOperation;
+			sourceTree = "<group>";
+		};
+		7A9238951C50311C0072D8E3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7A9238961C50311C0072D8E3 /* CoreOperation.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		7A9238971C50311C0072D8E3 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				7A9238981C50311C0072D8E3 /* COMOperation.h */,
+				7A9238991C50311C0072D8E3 /* COMOperation.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		7A92389A1C50311C0072D8E3 /* QueueManager */ = {
+			isa = PBXGroup;
+			children = (
+				7A92389B1C50311C0072D8E3 /* COMOperationQueueManager.h */,
+				7A92389C1C50311C0072D8E3 /* COMOperationQueueManager.m */,
+			);
+			path = QueueManager;
+			sourceTree = "<group>";
+		};
+		7A9238A21C5031D40072D8E3 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				7A9238A31C5031D40072D8E3 /* COMAppDelegate.h */,
+				7A9238A41C5031D40072D8E3 /* COMAppDelegate.m */,
+				7A9238A71C5031D40072D8E3 /* COMViewController.h */,
+				7A9238A81C5031D40072D8E3 /* COMViewController.m */,
+				7A9238A51C5031D40072D8E3 /* COMExampleOperation.h */,
+				7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7AAD3FDC1C09C141009617BB /* CoreOperation */ = {
+		7A9238791C5030EA0072D8E3 /* CoreOperation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7AAD3FE61C09C141009617BB /* Build configuration list for PBXNativeTarget "CoreOperation" */;
+			buildConfigurationList = 7A9238911C5030EA0072D8E3 /* Build configuration list for PBXNativeTarget "CoreOperation" */;
 			buildPhases = (
-				7AAD3FD91C09C141009617BB /* Sources */,
-				7AAD3FDA1C09C141009617BB /* Frameworks */,
-				7AAD3FDB1C09C141009617BB /* CopyFiles */,
+				7A9238761C5030EA0072D8E3 /* Sources */,
+				7A9238771C5030EA0072D8E3 /* Frameworks */,
+				7A9238781C5030EA0072D8E3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -112,54 +153,91 @@
 			);
 			name = CoreOperation;
 			productName = CoreOperation;
-			productReference = 7AAD3FDD1C09C141009617BB /* libCoreOperation.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 7A92387A1C5030EA0072D8E3 /* CoreOperation.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7AAD3FD51C09C141009617BB /* Project object */ = {
+		7A9238721C5030EA0072D8E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Gabriel Massana";
 				TargetAttributes = {
-					7AAD3FDC1C09C141009617BB = {
-						CreatedOnToolsVersion = 7.1.1;
+					7A9238791C5030EA0072D8E3 = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = 7AAD3FD81C09C141009617BB /* Build configuration list for PBXProject "CoreOperation" */;
+			buildConfigurationList = 7A9238751C5030EA0072D8E3 /* Build configuration list for PBXProject "CoreOperation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7AAD3FD41C09C141009617BB;
-			productRefGroup = 7AAD3FDE1C09C141009617BB /* Products */;
+			mainGroup = 7A9238711C5030EA0072D8E3;
+			productRefGroup = 7A92387B1C5030EA0072D8E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7AAD3FDC1C09C141009617BB /* CoreOperation */,
+				7A9238791C5030EA0072D8E3 /* CoreOperation */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7A9238781C5030EA0072D8E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A92388D1C5030EA0072D8E3 /* LaunchScreen.storyboard in Resources */,
+				7A92388A1C5030EA0072D8E3 /* Assets.xcassets in Resources */,
+				7A9238881C5030EA0072D8E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		7AAD3FD91C09C141009617BB /* Sources */ = {
+		7A9238761C5030EA0072D8E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A92386F1C50304D0072D8E3 /* COMOperation.m in Sources */,
-				7A9238701C50304D0072D8E3 /* COMOperationQueueManager.m in Sources */,
+				7A9238AB1C5031D40072D8E3 /* COMViewController.m in Sources */,
+				7A9238AA1C5031D40072D8E3 /* COMExampleOperation.m in Sources */,
+				7A9238A91C5031D40072D8E3 /* COMAppDelegate.m in Sources */,
+				7A92389D1C50311C0072D8E3 /* COMOperation.m in Sources */,
+				7A92389E1C50311C0072D8E3 /* COMOperationQueueManager.m in Sources */,
+				7A92387F1C5030EA0072D8E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		7A9238861C5030EA0072D8E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A9238871C5030EA0072D8E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A92388B1C5030EA0072D8E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A92388C1C5030EA0072D8E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		7AAD3FE41C09C141009617BB /* Debug */ = {
+		7A92388F1C5030EA0072D8E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,14 +273,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		7AAD3FE51C09C141009617BB /* Release */ = {
+		7A9238901C5030EA0072D8E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,53 +310,57 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		7AAD3FE71C09C141009617BB /* Debug */ = {
+		7A9238921C5030EA0072D8E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreOperation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.CoreOperation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		7AAD3FE81C09C141009617BB /* Release */ = {
+		7A9238931C5030EA0072D8E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreOperation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.CoreOperation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7AAD3FD81C09C141009617BB /* Build configuration list for PBXProject "CoreOperation" */ = {
+		7A9238751C5030EA0072D8E3 /* Build configuration list for PBXProject "CoreOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AAD3FE41C09C141009617BB /* Debug */,
-				7AAD3FE51C09C141009617BB /* Release */,
+				7A92388F1C5030EA0072D8E3 /* Debug */,
+				7A9238901C5030EA0072D8E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7AAD3FE61C09C141009617BB /* Build configuration list for PBXNativeTarget "CoreOperation" */ = {
+		7A9238911C5030EA0072D8E3 /* Build configuration list for PBXNativeTarget "CoreOperation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AAD3FE71C09C141009617BB /* Debug */,
-				7AAD3FE81C09C141009617BB /* Release */,
+				7A9238921C5030EA0072D8E3 /* Debug */,
+				7A9238931C5030EA0072D8E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7AAD3FD51C09C141009617BB /* Project object */;
+	rootObject = 7A9238721C5030EA0072D8E3 /* Project object */;
 }

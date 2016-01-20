@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/GabrielMassana/CoreOperation-iOS.git", :tag => s.version, :branch => "master"}
-
-  s.source_files  = "OperationQueueManager/**/*.{h,m}"
-  s.public_header_files = "OperationQueueManager/**/*.{h}"
+  
+  s.source_files  = "CoreOperation/**/*.{h,m}"
+  s.public_header_files = "CoreOperation/**/*.{h}"
 
   s.requires_arc = true
 

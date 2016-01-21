@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GabrielMassana/CoreOperation-iOS.git", :tag => s.version, :branch => "master"}
   
-  s.source_files  = "CoreOperation/CoreOperation/**/*.{h,m}"
-  s.public_header_files = "CoreOperation/CoreOperation/**/*.{h}"
+  s.source_files  = "CoreOperation/CoreOperation/CoreOperation/**/*.{h,m}"
+  s.public_header_files = "CoreOperation/CoreOperation/CoreOperation/**/*.{h}"
 
   s.requires_arc = true
 

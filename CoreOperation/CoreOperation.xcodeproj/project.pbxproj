@@ -14,6 +14,8 @@
 		7A9238A91C5031D40072D8E3 /* COMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A41C5031D40072D8E3 /* COMAppDelegate.m */; };
 		7A9238AA1C5031D40072D8E3 /* COMExampleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */; };
 		7A9238AB1C5031D40072D8E3 /* COMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A81C5031D40072D8E3 /* COMViewController.m */; };
+		C07313611C514AC600AE5DA9 /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C073135D1C514AC600AE5DA9 /* COMOperation.m */; };
+		C07313621C514AC600AE5DA9 /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C07313601C514AC600AE5DA9 /* COMOperationQueueManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMExampleOperation.m; sourceTree = "<group>"; };
 		7A9238A71C5031D40072D8E3 /* COMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMViewController.h; sourceTree = "<group>"; };
 		7A9238A81C5031D40072D8E3 /* COMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMViewController.m; sourceTree = "<group>"; };
+		C073135A1C514AC600AE5DA9 /* CoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
+		C073135C1C514AC600AE5DA9 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
+		C073135D1C514AC600AE5DA9 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
+		C073135F1C514AC600AE5DA9 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
+		C07313601C514AC600AE5DA9 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,9 @@
 		7A9238941C50311C0072D8E3 /* CoreOperation */ = {
 			isa = PBXGroup;
 			children = (
+				C07313591C514AC600AE5DA9 /* Header */,
+				C073135B1C514AC600AE5DA9 /* Operation */,
+				C073135E1C514AC600AE5DA9 /* QueueManager */,
 			);
 			path = CoreOperation;
 			sourceTree = "<group>";
@@ -98,6 +108,35 @@
 				7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		C07313591C514AC600AE5DA9 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C073135A1C514AC600AE5DA9 /* CoreOperation.h */,
+			);
+			name = Header;
+			path = ../../Header;
+			sourceTree = "<group>";
+		};
+		C073135B1C514AC600AE5DA9 /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				C073135C1C514AC600AE5DA9 /* COMOperation.h */,
+				C073135D1C514AC600AE5DA9 /* COMOperation.m */,
+			);
+			name = Operation;
+			path = ../../Operation;
+			sourceTree = "<group>";
+		};
+		C073135E1C514AC600AE5DA9 /* QueueManager */ = {
+			isa = PBXGroup;
+			children = (
+				C073135F1C514AC600AE5DA9 /* COMOperationQueueManager.h */,
+				C07313601C514AC600AE5DA9 /* COMOperationQueueManager.m */,
+			);
+			name = QueueManager;
+			path = ../../QueueManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +210,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9238AB1C5031D40072D8E3 /* COMViewController.m in Sources */,
+				C07313621C514AC600AE5DA9 /* COMOperationQueueManager.m in Sources */,
 				7A9238AA1C5031D40072D8E3 /* COMExampleOperation.m in Sources */,
 				7A9238A91C5031D40072D8E3 /* COMAppDelegate.m in Sources */,
 				7A92387F1C5030EA0072D8E3 /* main.m in Sources */,
+				C07313611C514AC600AE5DA9 /* COMOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

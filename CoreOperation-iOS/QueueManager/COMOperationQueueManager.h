@@ -1,6 +1,6 @@
 //
 //  COMOperationQueueManager.h
-//  Hot
+//  CoreOperation
 //
 //  Created by GabrielMassana on 18/11/2015.
 //  Copyright © 2015 Gabriel Massana. All rights reserved.

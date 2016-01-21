@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreOperation"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "A static library project that simplifies NSOperationQueue."
 
   s.homepage     = "https://github.com/GabrielMassana"
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GabrielMassana/CoreOperation-iOS.git", :tag => s.version, :branch => "master"}
   
-  s.source_files  = "CoreOperation/CoreOperation/**/*.{h,m}"
-  s.public_header_files = "CoreOperation/CoreOperation/**/*.{h}"
+  s.source_files  = "CoreOperation-iOS/**/*.{h,m}"
+  s.public_header_files = "CoreOperation-iOS/**/*.{h}"
 
   s.requires_arc = true
 

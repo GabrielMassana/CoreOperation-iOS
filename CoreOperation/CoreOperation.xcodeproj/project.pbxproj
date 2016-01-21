@@ -31,11 +31,11 @@
 		7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMExampleOperation.m; sourceTree = "<group>"; };
 		7A9238A71C5031D40072D8E3 /* COMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMViewController.h; sourceTree = "<group>"; };
 		7A9238A81C5031D40072D8E3 /* COMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMViewController.m; sourceTree = "<group>"; };
-		C073135A1C514AC600AE5DA9 /* CoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
-		C073135C1C514AC600AE5DA9 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
-		C073135D1C514AC600AE5DA9 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
-		C073135F1C514AC600AE5DA9 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
-		C07313601C514AC600AE5DA9 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
+		C073135A1C514AC600AE5DA9 /* Header */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Header; path = "../CoreOperation-iOS/Header"; sourceTree = "<group>"; };
+		C073135C1C514AC600AE5DA9 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMOperation.h; path = "../CoreOperation-iOS/Operation/COMOperation.h"; sourceTree = "<group>"; };
+		C073135D1C514AC600AE5DA9 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMOperation.m; path = "../CoreOperation-iOS/Operation/COMOperation.m"; sourceTree = "<group>"; };
+		C073135F1C514AC600AE5DA9 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COMOperationQueueManager.h; path = "../CoreOperation-iOS/QueueManager/COMOperationQueueManager.h"; sourceTree = "<group>"; };
+		C07313601C514AC600AE5DA9 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COMOperationQueueManager.m; path = "../CoreOperation-iOS/QueueManager/COMOperationQueueManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		C07313591C514AC600AE5DA9 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				C073135A1C514AC600AE5DA9 /* CoreOperation.h */,
+				C073135A1C514AC600AE5DA9 /* Header */,
 			);
 			name = Header;
 			path = ../../Header;

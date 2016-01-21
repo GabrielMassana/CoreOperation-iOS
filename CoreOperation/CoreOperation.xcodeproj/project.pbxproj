@@ -11,8 +11,6 @@
 		7A9238881C5030EA0072D8E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9238861C5030EA0072D8E3 /* Main.storyboard */; };
 		7A92388A1C5030EA0072D8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9238891C5030EA0072D8E3 /* Assets.xcassets */; };
 		7A92388D1C5030EA0072D8E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A92388B1C5030EA0072D8E3 /* LaunchScreen.storyboard */; };
-		7A92389D1C50311C0072D8E3 /* COMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238991C50311C0072D8E3 /* COMOperation.m */; };
-		7A92389E1C50311C0072D8E3 /* COMOperationQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92389C1C50311C0072D8E3 /* COMOperationQueueManager.m */; };
 		7A9238A91C5031D40072D8E3 /* COMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A41C5031D40072D8E3 /* COMAppDelegate.m */; };
 		7A9238AA1C5031D40072D8E3 /* COMExampleOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A61C5031D40072D8E3 /* COMExampleOperation.m */; };
 		7A9238AB1C5031D40072D8E3 /* COMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9238A81C5031D40072D8E3 /* COMViewController.m */; };
@@ -25,11 +23,6 @@
 		7A9238891C5030EA0072D8E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A92388C1C5030EA0072D8E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A92388E1C5030EA0072D8E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A9238961C50311C0072D8E3 /* CoreOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreOperation.h; sourceTree = "<group>"; };
-		7A9238981C50311C0072D8E3 /* COMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperation.h; sourceTree = "<group>"; };
-		7A9238991C50311C0072D8E3 /* COMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperation.m; sourceTree = "<group>"; };
-		7A92389B1C50311C0072D8E3 /* COMOperationQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMOperationQueueManager.h; sourceTree = "<group>"; };
-		7A92389C1C50311C0072D8E3 /* COMOperationQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMOperationQueueManager.m; sourceTree = "<group>"; };
 		7A9238A31C5031D40072D8E3 /* COMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMAppDelegate.h; sourceTree = "<group>"; };
 		7A9238A41C5031D40072D8E3 /* COMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMAppDelegate.m; sourceTree = "<group>"; };
 		7A9238A51C5031D40072D8E3 /* COMExampleOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMExampleOperation.h; sourceTree = "<group>"; };
@@ -90,37 +83,8 @@
 		7A9238941C50311C0072D8E3 /* CoreOperation */ = {
 			isa = PBXGroup;
 			children = (
-				7A9238951C50311C0072D8E3 /* Header */,
-				7A9238971C50311C0072D8E3 /* Operation */,
-				7A92389A1C50311C0072D8E3 /* QueueManager */,
 			);
 			path = CoreOperation;
-			sourceTree = "<group>";
-		};
-		7A9238951C50311C0072D8E3 /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				7A9238961C50311C0072D8E3 /* CoreOperation.h */,
-			);
-			path = Header;
-			sourceTree = "<group>";
-		};
-		7A9238971C50311C0072D8E3 /* Operation */ = {
-			isa = PBXGroup;
-			children = (
-				7A9238981C50311C0072D8E3 /* COMOperation.h */,
-				7A9238991C50311C0072D8E3 /* COMOperation.m */,
-			);
-			path = Operation;
-			sourceTree = "<group>";
-		};
-		7A92389A1C50311C0072D8E3 /* QueueManager */ = {
-			isa = PBXGroup;
-			children = (
-				7A92389B1C50311C0072D8E3 /* COMOperationQueueManager.h */,
-				7A92389C1C50311C0072D8E3 /* COMOperationQueueManager.m */,
-			);
-			path = QueueManager;
 			sourceTree = "<group>";
 		};
 		7A9238A21C5031D40072D8E3 /* Example */ = {
@@ -209,8 +173,6 @@
 				7A9238AB1C5031D40072D8E3 /* COMViewController.m in Sources */,
 				7A9238AA1C5031D40072D8E3 /* COMExampleOperation.m in Sources */,
 				7A9238A91C5031D40072D8E3 /* COMAppDelegate.m in Sources */,
-				7A92389D1C50311C0072D8E3 /* COMOperation.m in Sources */,
-				7A92389E1C50311C0072D8E3 /* COMOperationQueueManager.m in Sources */,
 				7A92387F1C5030EA0072D8E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

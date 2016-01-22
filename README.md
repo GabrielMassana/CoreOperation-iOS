@@ -28,8 +28,123 @@ Drag into your project the folder `/CoreOperation-iOS`. That's all.
 
 ## Example
 
+#### Register Operation Queues
+
 ```objc
-Soon
+
+//  AppDelegate.m
+
+NSString *const kCOMLocalOperationQueueTypeIdentifier = @"kCOMLocalOperationQueueTypeIdentifier";
+
+
+#pragma mark - OperationQueues
+
+- (void)registerOperationQueues
+{
+    //Local Background
+    NSOperationQueue *localOperationQueue = [[NSOperationQueue alloc] init];
+    localOperationQueue.qualityOfService = NSQualityOfServiceBackground;
+    localOperationQueue.maxConcurrentOperationCount = 1;
+    
+    [[COMOperationQueueManager sharedInstance] registerOperationQueue:localOperationQueue
+                                             operationQueueIdentifier:kCOMLocalOperationQueueTypeIdentifier];
+}
+
+
+```
+
+#### Create an COMOperation subclass
+
+```objc
+//  COMExampleOperation.h
+
+@interface COMExampleOperation : COMOperation
+
+- (instancetype)initWithValue:(NSInteger)value;
+
+@end
+
+//  COMExampleOperation.m
+
+@interface COMExampleOperation ()
+
+@property (nonatomic, assign) NSInteger value;
+
+@end
+
+@implementation COMExampleOperation
+
+@synthesize identifier = _identifier;
+
+#pragma mark - Init
+
+- (instancetype)initWithValue:(NSInteger)value
+{
+    self = [super init];
+    
+    if (self)
+    {
+        self.value = value;
+    }
+    
+    return self;
+}
+
+#pragma mark - Identifier
+
+- (NSString *)identifier
+{
+    if (!_identifier)
+    {
+        _identifier = [NSString stringWithFormat:@"COMExampleOperation-%@", @(self.value)];
+    }
+    
+    return _identifier;
+}
+
+#pragma mark - Start
+
+- (void)start
+{
+    [super start];
+    
+    srand((unsigned)time(0));
+    NSInteger mod = self.value;
+    NSInteger random = rand();
+    NSInteger result = random % mod;
+    
+    [self didSucceedWithResult:@(result)];
+}
+
+#pragma mark - Cancel
+
+- (void)cancel
+{
+    [super cancel];
+    
+    [self didSucceedWithResult:nil];
+}
+
+```
+
+#### Use the operaation
+
+```objc
+
+- (void)operationExample
+{
+    COMExampleOperation *operation = [[COMExampleOperation alloc] initWithValue:15];
+    
+    operation.operationQueueIdentifier = kCOMLocalOperationQueueTypeIdentifier;
+    
+    operation.onSuccess = ^(id result)
+    {
+        NSLog(@"%@", result);
+    };
+    
+    [[COMOperationQueueManager sharedInstance] addOperation:operation];
+}
+
 ```
 
 ## License

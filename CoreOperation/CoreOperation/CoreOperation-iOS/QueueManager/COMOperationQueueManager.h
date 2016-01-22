@@ -10,6 +10,9 @@
 
 @class COMOperation;
 
+/**
+ This class coordinates the operations.
+ */
 @interface COMOperationQueueManager : NSObject
 
 /*
@@ -19,10 +22,20 @@
  */
 + (instancetype)sharedInstance;
 
+/**
+ Registers an operation queue.
+ 
+ @param operationQueue - the new operation queue to be registered.
+ @param operationQueueIdentifier - the new operation queue identifier.
+ */
 - (void)registerOperationQueue:(NSOperationQueue *)operationQueue
       operationQueueIdentifier:(NSString *)operationQueueIdentifier;
 
+/**
+ Add an operation to an operation queue.
+ 
+ @param operation - the new operation to be added.
+ */
 - (void)addOperation:(COMOperation *)operation;
-
 
 @end

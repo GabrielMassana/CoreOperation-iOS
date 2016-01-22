@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreOperation"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.summary      = "Wrapper project to simplify NSOperation and NSOperationQueue."
 
   s.homepage     = "https://github.com/GabrielMassana"

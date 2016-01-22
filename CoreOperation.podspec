@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "CoreOperation"
-  s.version      = "1.0.6"
-  s.summary      = "A static library project that simplifies NSOperationQueue."
+  s.version      = "1.0.7"
+  s.summary      = "Wrapper project to simplify NSOperation and NSOperationQueue."
 
   s.homepage     = "https://github.com/GabrielMassana"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md'}

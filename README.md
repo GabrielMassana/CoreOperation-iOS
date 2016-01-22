@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/CoreOperation.svg?style=flat-square)](http://cocoapods.org/pods/CoreOperation)
 [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/CoreOperation.svg?style=flat-square)](http://cocoapods.org/pods/CoreOperation)
 
-A static library project that simplifies NSOperationQueue
+Wrapper project to simplify NSOperation and NSOperationQueue.
 
 ## Installation
 

@@ -1,0 +1,4 @@
+language: objective-c
+   
+script: 
+   xctool -project CoreOperation.xcodeproj -scheme CoreOperation build -sdk iphonesimulator

@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/CoreOperation.svg?style=flat-square)](http://cocoapods.org/pods/CoreOperation)
 [![Platform](https://img.shields.io/cocoapods/p/CoreOperation.svg?style=flat-square)](http://cocoapods.org/pods/CoreOperation)
 [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/CoreOperation.svg?style=flat-square)](http://cocoapods.org/pods/CoreOperation)
+[![Build Status](https://img.shields.io/travis/GabrielMassana/CoreOperation-iOS/master.svg?style=flat-square)](https://travis-ci.org/GabrielMassana/CoreOperation-iOS)
 
 Wrapper project to simplify NSOperation and NSOperationQueue.
 

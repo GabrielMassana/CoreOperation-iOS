@@ -62,7 +62,36 @@
 {
     NSOperationQueue *operationQueue = self.operationQueuesDictionary[operation.operationQueueIdentifier];
     
-    [operationQueue addOperation:operation];
+    COMOperation *coalescedOperation = [self coalesceOperation:operation
+                                                     scheduler:operationQueue];
+    
+    // If operation was not coalesced, then adde it to the queue.
+    // If was coalesced, then it was already in the queue.
+    if (!coalescedOperation)
+    {
+        [operationQueue addOperation:operation];
+    }
+}
+
+- (COMOperation *)coalesceOperation:(COMOperation *)newOperation
+                          scheduler:(NSOperationQueue *)operationQueue
+{
+    NSArray *operations = [operationQueue operations];
+    
+    for (COMOperation *operation in operations)
+    {
+        BOOL canAskToCoalesce = [operation isKindOfClass:[COMOperation class]];
+        
+        if (canAskToCoalesce &&
+            [operation canCoalesceWithOperation:newOperation])
+        {
+            [operation coalesceWithOperation:newOperation];
+            
+            return operation;
+        }
+    }
+
+    return nil;
 }
 
 @end

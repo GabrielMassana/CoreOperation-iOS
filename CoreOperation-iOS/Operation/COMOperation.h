@@ -18,7 +18,7 @@ typedef void (^COMOperationOnCompletion)(id result);
 @interface COMOperation : NSOperation
 
 /**
- Operation identifier.
+ Unique identifier used for coalescing, operations with the same identifier will be coalesced in the operation coordinator.
  */
 @property (atomic, copy) NSString *identifier;
 
@@ -86,5 +86,21 @@ typedef void (^COMOperationOnCompletion)(id result);
  To cancel an operation use cancel instead.
  */
 - (void)didFailWithError:(NSError *)error;
+
+/**
+ This method figures out if we can coalesce with another operation.
+ 
+ @param operation - Operation to determaine if we can coalesce with.
+ 
+ @return YES if we can coaslesce with it. NO otherwise.
+ */
+- (BOOL)canCoalesceWithOperation:(COMOperation *)operation;
+
+/**
+ This method coalesces another operation with this one.
+ 
+ @param operation - Operation to coalesce with.
+ */
+- (void)coalesceWithOperation:(COMOperation *)operation;
 
 @end

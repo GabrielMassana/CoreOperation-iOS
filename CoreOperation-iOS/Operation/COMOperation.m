@@ -173,4 +173,65 @@
     }
 }
 
+#pragma mark - Coalescing
+
+- (BOOL)canCoalesceWithOperation:(COMOperation *)operation
+{
+    return [self.identifier isEqualToString:operation.identifier];
+}
+
+- (void)coalesceWithOperation:(COMOperation *)operation
+{
+    // Success coalescing
+    void (^mySuccessBlock)(id result) = [_onSuccess copy];
+    void (^theirSuccessBlock)(id result) = [operation->_onSuccess copy];
+    
+    self.onSuccess = ^(id result)
+    {
+        if (mySuccessBlock)
+        {
+            mySuccessBlock(result);
+        }
+        
+        if (theirSuccessBlock)
+        {
+            theirSuccessBlock(result);
+        }
+    };
+    
+    // Failure coalescing
+    void (^myFailureBlock)(NSError *error) = [_onFailure copy];
+    void (^theirFailureBlock)(NSError *error) = [operation->_onFailure copy];
+    
+    self.onFailure = ^(NSError *error)
+    {
+        if (myFailureBlock)
+        {
+            myFailureBlock(error);
+        }
+        
+        if (theirFailureBlock)
+        {
+            theirFailureBlock(error);
+        }
+    };
+    
+    // Completion coalescing
+    void (^myCompletionBlock)(id result) = [_onCompletion copy];
+    void (^theirCompletionBlock)(id result) = [operation->_onCompletion copy];
+    
+    self.onCompletion = ^(id result)
+    {
+        if (myCompletionBlock)
+        {
+            myCompletionBlock(result);
+        }
+        
+        if (theirCompletionBlock)
+        {
+            theirCompletionBlock(result);
+        }
+    };
+}
+
 @end

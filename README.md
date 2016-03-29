@@ -155,7 +155,7 @@ ButtonBackgroundColor-iOS is released under the MIT license. Please see the file
 ## Versions
 
 ```bash
-$ git tag -a 1.0.0 -m 'Version 1.0.0'
+$ git tag -a 1.1.0 -m 'Version 1.1.0'
 
 $ git push --tags
 ```
